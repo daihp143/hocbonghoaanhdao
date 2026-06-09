@@ -1,0 +1,3564 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chính Sách Học Bổng 2026 - Đại Học Đông Á</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* ===== RESET & BASE ===== */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primary-green: #00a556;
+        --primary-orange: #e96440;
+        --green-light: #e8f8f0;
+        --orange-light: #fef0ec;
+        --blue-light: #e8f4fd;
+        --purple-light: #f3e8fd;
+        --dark: #1a2e35;
+        --gray: #6b7c85;
+        --light-bg: #f8fdfb;
+        --white: #ffffff;
+        --border: #e8eef2;
+        --shadow: 0 10px 40px rgba(0, 165, 86, 0.08);
+        --shadow-hover: 0 20px 60px rgba(0, 165, 86, 0.15);
+      }
+
+      body {
+        font-family: "Be Vietnam Pro", sans-serif;
+        color: var(--dark);
+        background: var(--white);
+        overflow-x: hidden;
+        line-height: 1.7;
+      }
+
+      /* ===== HEADER ===== */
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(0, 165, 86, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .header-inner {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 16px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+      }
+
+      .logo-icon {
+        width: 44px;
+        height: 44px;
+        background: linear-gradient(
+          135deg,
+          var(--primary-green),
+          var(--primary-orange)
+        );
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 20px;
+      }
+
+      .logo-text {
+        font-size: 20px;
+        font-weight: 800;
+        color: var(--dark);
+      }
+
+      .logo-text span {
+        color: var(--primary-green);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 32px;
+        list-style: none;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: var(--gray);
+        font-weight: 500;
+        font-size: 14px;
+        transition: color 0.3s;
+        position: relative;
+      }
+
+      .nav-links a:hover {
+        color: var(--primary-green);
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--primary-green);
+        transition: width 0.3s;
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      .btn-header {
+        padding: 10px 24px;
+        background: linear-gradient(135deg, var(--primary-green), #00c964);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-decoration: none;
+      }
+
+      .btn-header:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 165, 86, 0.3);
+      }
+
+      /* ===== HERO SECTION ===== */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        padding-top: 80px;
+        background: linear-gradient(
+          135deg,
+          #f0fdf6 0%,
+          #fff8f5 50%,
+          #f0fdf6 100%
+        );
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -20%;
+        width: 800px;
+        height: 800px;
+        background: radial-gradient(
+          circle,
+          rgba(0, 165, 86, 0.08) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+      }
+
+      .hero-inner {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 60px 40px;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 60px;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--green-light);
+        color: var(--primary-green);
+        padding: 8px 18px;
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 24px;
+        animation: fadeInUp 0.8s ease;
+      }
+
+      .hero-title {
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 1.15;
+        margin-bottom: 20px;
+        animation: fadeInUp 0.8s ease 0.1s both;
+      }
+
+      .highlight-green {
+        background: linear-gradient(135deg, var(--primary-green), #00c964);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .highlight-orange {
+        background: linear-gradient(135deg, var(--primary-orange), #ff8a65);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero-subtitle {
+        font-size: 17px;
+        color: var(--gray);
+        margin-bottom: 24px;
+        line-height: 1.8;
+        animation: fadeInUp 0.8s ease 0.2s both;
+        text-align: justify;
+      }
+
+      .hero-philosophy {
+        background: white;
+        border-left: 4px solid var(--primary-orange);
+        padding: 20px 24px;
+        border-radius: 12px;
+        margin-bottom: 32px;
+        font-style: italic;
+        color: var(--dark);
+        font-size: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        animation: fadeInUp 0.8s ease 0.25s both;
+      }
+
+      .hero-philosophy strong {
+        color: var(--primary-orange);
+        font-style: normal;
+      }
+
+      .hero-actions {
+        display: flex;
+        gap: 16px;
+        animation: fadeInUp 0.8s ease 0.3s both;
+      }
+
+      .btn-primary {
+        padding: 16px 36px;
+        background: linear-gradient(135deg, var(--primary-green), #00c964);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 35px rgba(0, 165, 86, 0.35);
+      }
+
+      .btn-secondary {
+        padding: 16px 36px;
+        background: white;
+        color: var(--primary-orange);
+        border: 2px solid var(--primary-orange);
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .btn-secondary:hover {
+        background: var(--primary-orange);
+        color: white;
+        transform: translateY(-3px);
+      }
+
+      /* ===== HERO CARD ===== */
+      .hero-card {
+        background: white;
+        border-radius: 24px;
+        padding: 36px;
+        box-shadow: var(--shadow);
+        position: relative;
+        animation: fadeInRight 1s ease 0.3s both;
+      }
+
+      .hero-card-title {
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .hero-card-title i {
+        color: var(--primary-orange);
+      }
+
+      .scholarship-mini {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 16px;
+        border-radius: 14px;
+        margin-bottom: 12px;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+
+      .scholarship-mini:hover {
+        transform: translateX(5px);
+      }
+
+      .scholarship-mini.green-bg {
+        background: var(--green-light);
+      }
+
+      .scholarship-mini.orange-bg {
+        background: var(--orange-light);
+      }
+
+      .scholarship-mini.blue-bg {
+        background: var(--blue-light);
+      }
+
+      .scholarship-mini-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: white;
+        flex-shrink: 0;
+      }
+
+      .scholarship-mini-icon.green {
+        background: linear-gradient(135deg, var(--primary-green), #00c964);
+      }
+
+      .scholarship-mini-icon.orange {
+        background: linear-gradient(135deg, var(--primary-orange), #ff8a65);
+      }
+
+      .scholarship-mini-icon.blue {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+      }
+
+      .scholarship-mini-info h4 {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 2px;
+      }
+
+      .scholarship-mini-info p {
+        font-size: 13px;
+        color: var(--gray);
+      }
+
+      /* ===== OVERVIEW SECTION ===== */
+      .overview {
+        padding: 100px 40px;
+        background: var(--white);
+      }
+
+      .overview-inner {
+        max-width: 1280px;
+        margin: 0 auto;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--green-light);
+        color: var(--primary-green);
+        padding: 8px 18px;
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+
+      .section-title {
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 16px;
+      }
+
+      .text-green {
+        color: var(--primary-green);
+      }
+
+      .text-orange {
+        color: var(--primary-orange);
+      }
+
+      .section-desc {
+        font-size: 17px;
+        color: var(--gray);
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .overview-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      .overview-card {
+        background: white;
+        border-radius: 20px;
+        padding: 32px 28px;
+        border: 1px solid var(--border);
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .overview-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        transition: transform 0.4s ease;
+      }
+
+      .overview-card.green::before {
+        background: linear-gradient(90deg, var(--primary-green), #00c964);
+      }
+
+      .overview-card.orange::before {
+        background: linear-gradient(90deg, var(--primary-orange), #ff8a65);
+      }
+
+      .overview-card.blue::before {
+        background: linear-gradient(90deg, #4facfe, #00f2fe);
+      }
+
+      .overview-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-hover);
+        border-color: transparent;
+      }
+
+      .overview-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        color: white;
+        margin-bottom: 20px;
+      }
+
+      .overview-icon.green {
+        background: linear-gradient(135deg, var(--primary-green), #00c964);
+      }
+
+      .overview-icon.orange {
+        background: linear-gradient(135deg, var(--primary-orange), #ff8a65);
+      }
+
+      .overview-icon.blue {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+      }
+
+      .overview-card h3 {
+        font-size: 18px;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+
+      .overview-card p {
+        font-size: 14px;
+        color: var(--gray);
+        line-height: 1.7;
+        margin-bottom: 16px;
+      }
+
+      .overview-tag {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 50px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .overview-tag.green {
+        background: var(--green-light);
+        color: var(--primary-green);
+      }
+
+      .overview-tag.orange {
+        background: var(--orange-light);
+        color: var(--primary-orange);
+      }
+
+      .overview-tag.blue {
+        background: var(--blue-light);
+        color: #4facfe;
+      }
+
+      /* ===== DETAIL SECTION ===== */
+      .detail-section {
+        padding: 100px 40px;
+        background: linear-gradient(180deg, var(--light-bg) 0%, white 100%);
+      }
+
+      .detail-inner {
+        max-width: 1280px;
+        margin: 0 auto;
+      }
+
+      .tabs-container {
+        background: white;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        margin-top: 40px;
+      }
+
+      .tabs-header {
+        display: flex;
+        background: var(--light-bg);
+        border-bottom: 1px solid var(--border);
+        overflow-x: auto;
+      }
+
+      .tab-btn {
+        flex: 1;
+        min-width: 200px;
+        padding: 20px 24px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--gray);
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+        white-space: nowrap;
+      }
+
+      .tab-btn::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: var(--primary-green);
+        transform: scaleX(0);
+        transition: transform 0.3s;
+      }
+
+      .tab-btn.active {
+        color: var(--primary-green);
+        background: white;
+      }
+
+      .tab-btn.active::after {
+        transform: scaleX(1);
+      }
+
+      .tab-btn:hover:not(.active) {
+        color: var(--dark);
+      }
+
+      .tab-content {
+        display: none;
+        padding: 40px;
+        animation: fadeIn 0.5s ease;
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ===== SCHOLARSHIP DETAIL CARDS ===== */
+      .sch-detail-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 24px;
+        border-radius: 16px;
+        margin-bottom: 32px;
+      }
+
+      .sch-detail-header.green-bg {
+        background: linear-gradient(
+          135deg,
+          rgba(0, 165, 86, 0.08),
+          rgba(0, 165, 86, 0.02)
+        );
+      }
+
+      .sch-detail-header.orange-bg {
+        background: linear-gradient(
+          135deg,
+          rgba(233, 100, 64, 0.08),
+          rgba(233, 100, 64, 0.02)
+        );
+      }
+
+      .sch-detail-header.blue-bg {
+        background: linear-gradient(
+          135deg,
+          rgba(79, 172, 254, 0.08),
+          rgba(79, 172, 254, 0.02)
+        );
+      }
+
+      .sch-detail-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        color: white;
+        flex-shrink: 0;
+      }
+
+      .sch-detail-icon.green {
+        background: linear-gradient(135deg, var(--primary-green), #00c964);
+      }
+
+      .sch-detail-icon.orange {
+        background: linear-gradient(135deg, var(--primary-orange), #ff8a65);
+      }
+
+      .sch-detail-icon.blue {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+      }
+
+      .sch-detail-info h3 {
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 6px;
+      }
+
+      .sch-detail-info p {
+        font-size: 15px;
+        color: var(--gray);
+      }
+
+      /* ===== SUB TABS ===== */
+      .sub-tabs {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 28px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .sub-tab-btn {
+        padding: 10px 20px;
+        background: var(--light-bg);
+        border: 2px solid transparent;
+        border-radius: 50px;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--gray);
+        transition: all 0.3s;
+      }
+
+      .sub-tab-btn.active {
+        background: white;
+        border-color: var(--primary-orange);
+        color: var(--primary-orange);
+      }
+
+      .sub-tab-btn:hover:not(.active) {
+        background: var(--orange-light);
+        color: var(--primary-orange);
+      }
+
+      .sub-content {
+        display: none;
+      }
+
+      .sub-content.active {
+        display: block;
+        animation: fadeIn 0.4s ease;
+      }
+
+      /* ===== TABLE ===== */
+      .sch-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 24px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+      }
+
+      .sch-table thead {
+        background: linear-gradient(135deg, var(--primary-green), #00c964);
+        color: white;
+      }
+
+      .sch-table th {
+        padding: 16px 20px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+      .sch-table td {
+        padding: 16px 20px;
+        border-bottom: 1px solid var(--border);
+        font-size: 14px;
+        vertical-align: top;
+        transition: background 0.3s;
+        background: transparent;
+      }
+
+      /*  HIỆU ỨNG HOVER CHỈ TỪ CỘT 2 TRỞ ĐI - Chỉ áp dụng cho các ô KHÔNG phải level-cell */
+      .sch-table tbody tr:hover td:not(.level-cell) {
+        background: var(--green-light);
+      }
+
+      .sch-table tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      .level-badge {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 50px;
+        font-size: 12px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .level-badge.gold {
+        background: linear-gradient(135deg, #ffd700, #ffb300);
+        color: white;
+      }
+
+      .level-badge.silver {
+        background: linear-gradient(135deg, #c0c0c0, #a0a0a0);
+        color: white;
+      }
+
+      .level-badge.bronze {
+        background: linear-gradient(135deg, #cd7f32, #b87333);
+        color: white;
+      }
+
+      .level-badge.green {
+        background: var(--green-light);
+        color: var(--primary-green);
+      }
+
+      /* ===== CONDITION LIST ===== */
+      .condition-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .condition-list li {
+        position: relative;
+        padding-left: 28px;
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 1.6;
+        color: var(--dark);
+        text-align: justify;
+      }
+
+      .condition-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--primary-green);
+        font-weight: 900;
+      }
+
+      .condition-list li.priority::before {
+        content: "⭐";
+        margin-left: -4px;
+      }
+
+      /* ===== INFO BOX ===== */
+      .info-box {
+        background: var(--blue-light);
+        border-left: 4px solid #4facfe;
+        padding: 20px 24px;
+        border-radius: 12px;
+        margin: 24px 0;
+      }
+
+      .info-box.orange {
+        background: var(--orange-light);
+        border-left-color: var(--primary-orange);
+      }
+
+      .info-box.green {
+        background: var(--green-light);
+        border-left-color: var(--primary-green);
+      }
+
+      .info-box h4 {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .info-box p,
+      .info-box ul {
+        font-size: 14px;
+        color: var(--dark);
+        line-height: 1.7;
+      }
+
+      .info-box ul {
+        padding-left: 20px;
+        margin-top: 8px;
+      }
+
+      /* ===== TIMELINE ===== */
+      .timeline-section {
+        padding: 100px 40px;
+        background: white;
+      }
+
+      .timeline-inner {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .timeline {
+        position: relative;
+        padding: 40px 0;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: linear-gradient(
+          180deg,
+          var(--primary-green),
+          var(--primary-orange)
+        );
+        transform: translateX(-50%);
+      }
+
+      .timeline-item {
+        position: relative;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+      }
+
+      .timeline-item:nth-child(odd) {
+        flex-direction: row;
+      }
+
+      .timeline-item:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      .timeline-content {
+        width: 45%;
+        background: white;
+        padding: 28px;
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border);
+        transition: all 0.3s;
+      }
+
+      .timeline-content:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-hover);
+      }
+
+      .timeline-dot {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: white;
+        border: 4px solid var(--primary-green);
+        z-index: 1;
+      }
+
+      .timeline-item:nth-child(even) .timeline-dot {
+        border-color: var(--primary-orange);
+      }
+
+      .timeline-date {
+        display: inline-block;
+        padding: 6px 14px;
+        background: var(--green-light);
+        color: var(--primary-green);
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      .timeline-item:nth-child(even) .timeline-date {
+        background: var(--orange-light);
+        color: var(--primary-orange);
+      }
+
+      .timeline-content h4 {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      .timeline-content p {
+        font-size: 14px;
+        color: var(--gray);
+        line-height: 1.6;
+      }
+
+      /* ===== PRINCIPLES SECTION ===== */
+      .principles {
+        padding: 100px 40px;
+        background: linear-gradient(
+          135deg,
+          var(--primary-green) 0%,
+          #008c48 100%
+        );
+        position: relative;
+        overflow: hidden;
+      }
+
+      .principles::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -20%;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.05) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+      }
+
+      .principles-inner {
+        max-width: 1280px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+
+      .principles .section-header {
+        color: white;
+      }
+
+      .principles .section-badge {
+        background: rgba(255, 255, 255, 0.15);
+        color: white;
+      }
+
+      .principles .section-title {
+        color: white;
+      }
+
+      .principles .section-desc {
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      .principles-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+
+      .principle-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 28px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        transition: all 0.3s;
+      }
+
+      .principle-card:hover {
+        background: rgba(255, 255, 255, 0.18);
+        transform: translateY(-5px);
+      }
+
+      .principle-number {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        color: white;
+        margin-bottom: 16px;
+      }
+
+      .principle-card h4 {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .principle-card p {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      /* ===== CTA SECTION ===== */
+      .cta {
+        padding: 100px 40px;
+        background: var(--light-bg);
+      }
+
+      .cta-inner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(
+          90deg,
+          var(--primary-green),
+          var(--primary-orange)
+        );
+      }
+
+      .cta-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 24px;
+        background: linear-gradient(
+          135deg,
+          var(--primary-green),
+          var(--primary-orange)
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        color: white;
+        margin: 0 auto 24px;
+      }
+
+      .cta-title {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 16px;
+      }
+
+      .cta-desc {
+        font-size: 16px;
+        color: var(--gray);
+        margin-bottom: 36px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .cta-inner {
+        max-width: 980px;
+        margin: 0 auto;
+        background: linear-gradient(180deg, #ffffff 0%, #f6fff8 100%);
+        border-radius: 32px;
+        padding: 60px;
+        text-align: center;
+        box-shadow: var(--shadow);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cta-form {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+        gap: 16px;
+        max-width: 760px;
+        margin: 0 auto 24px;
+      }
+
+      .form-group {
+        text-align: left;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--dark);
+      }
+
+      .cta-form input,
+      .cta-form select {
+        width: 100%;
+        padding: 16px 20px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 18px;
+        background: #fcfffd;
+        font-size: 15px;
+        font-family: inherit;
+        outline: none;
+        transition:
+          border-color 0.3s,
+          box-shadow 0.3s,
+          transform 0.15s;
+      }
+
+      .cta-form input:focus,
+      .cta-form select:focus {
+        border-color: var(--primary-green);
+        box-shadow: 0 0 0 4px rgba(0, 165, 86, 0.08);
+      }
+
+      .cta-form select {
+        appearance: none;
+        background: #fcfffd
+          url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%236b7c85"%3E%3Cpath d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/%3E%3C/svg%3E')
+          no-repeat right 18px center;
+        background-size: 16px 16px;
+      }
+
+      .cta-form button {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 100%;
+        max-width: 240px;
+        padding: 16px 32px;
+        background: linear-gradient(135deg, var(--primary-orange), #ff8a65);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+        margin-top: 16px;
+      }
+
+      .cta-form button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(233, 100, 64, 0.25);
+      }
+
+      .cta-contact {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 32px;
+        padding-top: 32px;
+        border-top: 1px solid var(--border);
+        flex-wrap: wrap;
+      }
+
+      .cta-contact-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        color: var(--gray);
+      }
+
+      .cta-contact-item i {
+        color: var(--primary-green);
+        font-size: 16px;
+      }
+
+      .deadline-title {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--primary-orange);
+        margin-top: 16px;
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      /* ===== FOOTER ===== */
+      footer {
+        margin-top: 36px;
+        background: #0c4425;
+        color: rgba(255, 255, 255, 0.92);
+        padding: 30px 0;
+        font-size: 14px;
+      }
+
+      .footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+        align-items: start;
+      }
+
+      .footer-col {
+        min-width: 0;
+      }
+
+      .footer-col h4 {
+        margin: 0 0 10px;
+        font:
+          700 16px/1.3 "Montserrat",
+          sans-serif;
+        color: #ffffff;
+      }
+
+      .footer-campus h4 {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .footer-campus h4 svg {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+        flex: 0 0 16px;
+        margin-bottom: 2px;
+      }
+
+      .footer-col p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .footer-col p + p {
+        margin-top: 6px;
+      }
+
+      .footer-logo {
+        width: 280px;
+        height: 110px;
+        border-radius: 14px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: grid;
+        place-items: center;
+        margin-bottom: 12px;
+      }
+
+      .footer-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        /* background: #fff; */
+        padding: 10px;
+      }
+
+      .footer-logo-fallback {
+        font:
+          800 28px/1 "Montserrat",
+          sans-serif;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+
+      .footer-campus + .footer-campus {
+        margin-top: 14px;
+        padding-top: 14px;
+        border-top: 1px solid rgba(255, 255, 255, 0.16);
+      }
+
+      .footer-social {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 8px;
+      }
+
+      .footer-social a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: rgba(255, 255, 255, 0.92);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+
+      .footer-social svg {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+        flex: 0 0 16px;
+      }
+
+      .footer-social a:hover {
+        border-bottom-color: rgba(255, 255, 255, 0.7);
+      }
+
+      .modal {
+        position: fixed;
+        inset: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.65);
+        z-index: 2500;
+        padding: 20px;
+      }
+      .modal.open {
+        display: flex;
+      }
+      .modal-dialog {
+        width: min(560px, 100%);
+        background: #0d3420;
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .modal-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 24px;
+      }
+      .modal-header h3 {
+        margin: 0;
+        color: #ffffff;
+        font-size: 22px;
+        line-height: 1.2;
+      }
+      .modal-close {
+        width: 38px;
+        height: 38px;
+        border: none;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 20px;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s;
+      }
+      .modal-close:hover {
+        background: rgba(255, 255, 255, 0.14);
+        color: #ffffff;
+      }
+      .modal-body {
+        display: grid;
+        gap: 16px;
+      }
+      .modal-body p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.72);
+        line-height: 1.7;
+      }
+      .modal-form .form-group {
+        margin-bottom: 14px;
+      }
+      .modal-form label {
+        display: block;
+        margin-bottom: 8px;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 14px;
+      }
+      .modal-form input,
+      .modal-form select {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        color: #ffffff;
+        border-radius: 14px;
+        padding: 14px 16px;
+        font-size: 14px;
+        outline: none;
+        transition: border 0.2s, box-shadow 0.2s;
+      }
+      .modal-form select {
+        appearance: none;
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.08)
+          url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffffff"%3E%3Cpath d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/%3E%3C/svg%3E') no-repeat right 16px center;
+        background-size: 16px 16px;
+        padding-right: 44px;
+      }
+      .modal-form select option {
+        color: #1a2e35;
+        background: #ffffff;
+      }
+      .modal-form input:focus,
+      .modal-form select:focus {
+        border-color: rgba(126, 234, 158, 0.6);
+        box-shadow: 0 0 0 3px rgba(126, 234, 158, 0.12);
+      }
+      .modal-form button {
+        width: 100%;
+        margin-top: 8px;
+        padding: 18px 20px;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 18px;
+        background: linear-gradient(135deg, var(--primary-green), #00c964);
+        color: white;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 12px 30px rgba(0, 165, 86, 0.24);
+        transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+      }
+      .modal-form button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 36px rgba(0, 165, 86, 0.28);
+        background: linear-gradient(135deg, #00c964, var(--primary-green));
+      }
+      .modal-note {
+        color: rgba(255, 255, 255, 0.62);
+        font-size: 13px;
+        line-height: 1.7;
+      }
+
+      .status-modal {
+        position: fixed;
+        inset: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 2700;
+        padding: 20px;
+      }
+      .status-modal.open {
+        display: flex;
+      }
+      .status-dialog {
+        width: min(440px, 100%);
+        background: #ffffff;
+        border-radius: 24px;
+        padding: 28px 26px;
+        box-shadow: 0 26px 80px rgba(0, 0, 0, 0.22);
+        text-align: center;
+      }
+      .status-dialog.success {
+        border: 1px solid rgba(51, 201, 77, 0.22);
+      }
+      .status-dialog.error {
+        border: 1px solid rgba(242, 76, 76, 0.22);
+      }
+      .status-icon {
+        width: 64px;
+        height: 64px;
+        margin: 0 auto 18px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 28px;
+        color: #ffffff;
+      }
+      .status-icon.success {
+        background: #33c94d;
+      }
+      .status-icon.error {
+        background: #ff6f61;
+      }
+      .status-title {
+        margin: 0 0 10px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #102a43;
+      }
+      .status-message {
+        margin: 0;
+        color: #33475b;
+        line-height: 1.75;
+        font-size: 15px;
+      }
+      .status-actions {
+        margin-top: 24px;
+      }
+      .status-actions button {
+        background: #0d3420;
+        color: #ffffff;
+        border: none;
+        border-radius: 16px;
+        padding: 12px 24px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: transform 0.2s, background 0.2s;
+      }
+      .status-actions button:hover {
+        transform: translateY(-1px);
+        background: #154a30;
+      }
+
+      /* ===== UTILITY CLASSES ===== */
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .grid-2.mt-24 {
+        margin-top: 24px;
+      }
+
+      .flex-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .mb-20 {
+        margin-bottom: 20px;
+      }
+
+      .mb-24 {
+        margin-bottom: 24px;
+      }
+
+      .mb-32 {
+        margin-bottom: 32px;
+      }
+
+      .mt-24 {
+        margin-top: 24px;
+      }
+
+      .mt-32 {
+        margin-top: 32px;
+      }
+
+      .section-heading {
+        margin: 24px 0 16px;
+        font-size: 17px;
+        font-weight: 700;
+      }
+
+      .section-heading i {
+        margin-right: 8px;
+      }
+
+      .section-heading.color-green i {
+        color: var(--primary-green);
+      }
+
+      .section-heading.color-orange i {
+        color: var(--primary-orange);
+      }
+
+      .section-heading.color-purple i {
+        color: #667eea;
+      }
+
+      /* Tag pills */
+      .tag-pill {
+        padding: 8px 16px;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-block;
+      }
+
+      .tag-pill.purple {
+        background: var(--purple-light);
+        color: #667eea;
+      }
+
+      .tag-pill.green {
+        background: var(--green-light);
+        color: var(--primary-green);
+      }
+
+      /* Table column widths */
+      .col-stt {
+        width: 50px;
+      }
+
+      .col-level {
+        width: 20%;
+      }
+
+      .col-industry {
+        width: 25%;
+      }
+
+      .col-slots {
+        width: 10%;
+      }
+
+      .col-criteria {
+        width: 45%;
+      }
+
+      /* ===== FIX: Chỉ áp dụng background màu cho ô level-cell cụ thể ===== */
+      .level-cell {
+        vertical-align: middle;
+        text-align: center;
+        padding: 20px 12px;
+      }
+
+      /* Màu nền cho từng nhóm - CHỈ áp dụng cho .level-cell */
+      .row-group-gold .level-cell {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 215, 0, 0.15),
+          rgba(255, 179, 0, 0.1)
+        );
+      }
+
+      .row-group-silver .level-cell {
+        background: linear-gradient(
+          135deg,
+          rgba(192, 192, 192, 0.15),
+          rgba(160, 160, 160, 0.1)
+        );
+      }
+
+      .row-group-bronze .level-cell {
+        background: linear-gradient(
+          135deg,
+          rgba(205, 127, 50, 0.15),
+          rgba(184, 115, 51, 0.1)
+        );
+      }
+
+      .row-group-green .level-cell {
+        background: linear-gradient(
+          135deg,
+          rgba(0, 165, 86, 0.15),
+          rgba(0, 201, 100, 0.1)
+        );
+      }
+
+      /* ===== ANIMATIONS ===== */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeInRight {
+        from {
+          opacity: 0;
+          transform: translateX(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease;
+      }
+
+      .animate-on-scroll.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 1024px) {
+        .hero-inner {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        .hero-title {
+          font-size: 38px;
+        }
+        .overview-grid {
+          grid-template-columns: 1fr;
+        }
+        .principles-grid {
+          grid-template-columns: 1fr;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .timeline::before {
+          left: 30px;
+        }
+        .timeline-item,
+        .timeline-item:nth-child(even) {
+          flex-direction: row;
+          padding-left: 60px;
+        }
+        .timeline-content {
+          width: 100%;
+        }
+        .timeline-dot {
+          left: 30px;
+        }
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 768px) {
+        .header-inner {
+          padding: 12px 20px;
+        }
+        .nav-links {
+          display: none;
+        }
+        .hero-inner {
+          padding: 40px 20px;
+        }
+        .hero-title {
+          font-size: 30px;
+        }
+        .hero-actions {
+          flex-direction: column;
+        }
+        .section-title {
+          font-size: 26px;
+        }
+        .overview,
+        .detail-section,
+        .timeline-section,
+        .principles,
+        .cta {
+          padding: 60px 20px;
+        }
+        .tab-btn {
+          min-width: 150px;
+          font-size: 13px;
+          padding: 16px;
+        }
+        .tab-content {
+          padding: 24px;
+        }
+        .sch-table {
+          font-size: 12px;
+        }
+        .sch-table th,
+        .sch-table td {
+          padding: 10px;
+        }
+        .cta-inner {
+          padding: 40px 24px;
+        }
+        .cta-form {
+          grid-template-columns: 1fr;
+        }
+        .cta-contact {
+          flex-direction: column;
+          gap: 16px;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .footer-bottom {
+          flex-direction: column;
+          gap: 16px;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-inner">
+        <a href="#" class="logo">
+          <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="logo-text">Đại học <span>Đông Á</span></div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home">Trang chủ</a></li>
+          <li><a href="#overview">Tổng quan</a></li>
+          <li><a href="#details">Chi tiết học bổng</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+        <a href="#register" class="btn-header">Đăng ký ngay</a>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-star"></i> Tuyển sinh Đại học chính quy 2026
+          </div>
+          <h1 class="hero-title">
+            Chính Sách<br />
+            <span class="highlight-green">Học Bổng</span><br />
+            <span class="highlight-orange">Hoa Anh Đào 2026</span>
+          </h1>
+          <p class="hero-subtitle">
+            Trường Đại học Đông Á ban hành chính sách học bổng năm 2026 nhằm
+            đồng hành, khuyến khích và tạo điều kiện cho Tân sinh viên phát huy
+            năng lực, nuôi dưỡng ý chí vươn lên, chủ động hội nhập và lựa chọn
+            con đường học tập phù hợp.
+          </p>
+          <div class="hero-philosophy">
+            <strong>Triết lý giáo dục:</strong> "Học để làm người trách nhiệm;
+            Học để phát triển bản thân; Học để làm đúng cách; Học để thành công,
+            hiếu nghĩa và trách nhiệm"
+          </div>
+          <div class="hero-actions">
+            <a href="#details" class="btn-primary"
+              ><i class="fas fa-gift"></i> Xem chi tiết học bổng</a
+            >
+            <a href="#register" class="btn-secondary"
+              ><i class="fas fa-paper-plane"></i> Đăng ký xét tuyển</a
+            >
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3 class="hero-card-title">
+            <i class="fas fa-award"></i> 03 Nhóm Học Bổng Chính
+          </h3>
+          <div class="scholarship-mini green-bg">
+            <div class="scholarship-mini-icon green">
+              <i class="fas fa-flag"></i>
+            </div>
+            <div class="scholarship-mini-info">
+              <h4>Học bổng Quốc gia</h4>
+              <p>Theo NĐ 179/2026/NĐ-CP • 3.7 - 5.5 triệu/tháng</p>
+            </div>
+          </div>
+          <div class="scholarship-mini orange-bg">
+            <div class="scholarship-mini-icon orange">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="scholarship-mini-info">
+              <h4>Học bổng Khuyến tài</h4>
+              <p>Bao gồm: HB Tài năng, HB Cầu nối VN-Nhật, HB Honor</p>
+            </div>
+          </div>
+          <div class="scholarship-mini blue-bg">
+            <div class="scholarship-mini-icon blue">
+              <i class="fas fa-book-reader"></i>
+            </div>
+            <div class="scholarship-mini-info">
+              <h4>Học bổng Khuyến học</h4>
+              <p>Lên đến 6.000.000 đồng + bộ trang dụng học đường</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW SECTION -->
+    <section class="overview" id="overview">
+      <div class="overview-inner">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge">
+            <i class="fas fa-layer-group"></i> Tổng quan hệ thống học bổng
+          </div>
+          <h2 class="section-title">
+            Hệ Thống <span class="text-green">Học Bổng</span> Đa Dạng
+          </h2>
+          <p class="section-desc">
+            Chính sách học bổng được thiết kế theo 03 nhóm chính, hướng đến các
+            đối tượng sinh viên có năng lực, có nghị lực, có thành tích nổi bật
+          </p>
+        </div>
+        <div class="overview-grid">
+          <div class="overview-card green animate-on-scroll">
+            <div class="overview-icon green"><i class="fas fa-flag"></i></div>
+            <h3>Học bổng Quốc gia</h3>
+            <p>
+              Dành cho sinh viên các ngành khoa học cơ bản, kỹ thuật then chốt
+              và công nghệ chiến lược theo Nghị định 179/2026/NĐ-CP.
+            </p>
+            <span class="overview-tag green">3.7 - 5.5 triệu/tháng</span>
+          </div>
+          <div class="overview-card orange animate-on-scroll">
+            <div class="overview-icon orange">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>Học bổng Khuyến tài</h3>
+            <p>
+              Vinh danh thí sinh có thành tích học tập xuất sắc. Bao gồm: HB Tài
+              năng, HB Cầu nối Việt - Nhật và HB Hội nhập Quốc tế (Honor).
+            </p>
+            <span class="overview-tag orange">Đến 100% học phí</span>
+          </div>
+          <div class="overview-card blue animate-on-scroll">
+            <div class="overview-icon blue">
+              <i class="fas fa-book-reader"></i>
+            </div>
+            <h3>Học bổng Khuyến học</h3>
+            <p>
+              Đồng hành cùng tân sinh viên, chia sẻ chi phí ban đầu với 2 mức: 6
+              triệu và 4 triệu đồng cùng bộ trang dụng học đường.
+            </p>
+            <span class="overview-tag blue">Đến 6 triệu + quà</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAIL SECTION WITH TABS -->
+    <section class="detail-section" id="details">
+      <div class="detail-inner">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge">
+            <i class="fas fa-info-circle"></i> Chi tiết chính sách
+          </div>
+          <h2 class="section-title">
+            Chi Tiết <span class="text-orange">Từng Loại Học Bổng</span>
+          </h2>
+          <p class="section-desc">
+            Thông tin đầy đủ về điều kiện, tiêu chí, số suất và mức học bổng cho
+            từng đối tượng tân sinh viên
+          </p>
+        </div>
+
+        <div class="tabs-container animate-on-scroll">
+          <div class="tabs-header">
+            <button
+              class="tab-btn active"
+              onclick="switchTab(event, 'tab-national')"
+            >
+              <i class="fas fa-flag"></i> HB Quốc gia
+            </button>
+            <button class="tab-btn" onclick="switchTab(event, 'tab-talent')">
+              <i class="fas fa-trophy"></i> HB Khuyến tài
+            </button>
+            <button class="tab-btn" onclick="switchTab(event, 'tab-encourage')">
+              <i class="fas fa-book-reader"></i> HB Khuyến học
+            </button>
+          </div>
+
+          <!-- TAB 1: HỌC BỔNG QUỐC GIA -->
+          <div class="tab-content active" id="tab-national">
+            <div class="sch-detail-header green-bg">
+              <div class="sch-detail-icon green">
+                <i class="fas fa-flag"></i>
+              </div>
+              <div class="sch-detail-info">
+                <h3>Học bổng Quốc gia</h3>
+                <p>
+                  Theo Nghị định số 179/2026/NĐ-CP ngày 20/5/2026 của Chính phủ
+                </p>
+              </div>
+            </div>
+            <div class="info-box green">
+              <h4><i class="fas fa-info-circle"></i> Đối tượng áp dụng</h4>
+              <p>
+                Người học trúng tuyển, nhập học vào các ngành/chương trình đào
+                tạo thuộc nhóm ngành khoa học cơ bản, kỹ thuật then chốt và công
+                nghệ chiến lược theo Nghị định số 179/2026/NĐ-CP.
+              </p>
+            </div>
+            <h4 class="section-heading color-green">
+              <i class="fas fa-list-check"></i> Các ngành được xem xét hưởng HB
+              Quốc gia
+            </h4>
+            <table class="sch-table">
+              <thead>
+                <tr>
+                  <th class="col-stt">STT</th>
+                  <th>Ngành đào tạo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Thiết kế vi mạch bán dẫn</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Công nghệ thông tin</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Kỹ thuật máy tính</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Trí tuệ nhân tạo</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>CNKT Điện, Điện tử</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>CNKT Điều khiển và Tự động hóa</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>CNKT Ô tô</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Kỹ thuật Cơ điện tử</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>CNKT Xây dựng</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Công nghệ sinh học</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="grid-2 mt-24">
+              <div class="info-box">
+                <h4><i class="fas fa-money-bill-wave"></i> Mức học bổng</h4>
+                <ul>
+                  <li>
+                    <strong>3.700.000 - 5.500.000 đồng/tháng</strong> (tùy nhóm
+                    ngành)
+                  </li>
+                  <li>Cấp <strong>10 tháng/năm học</strong></li>
+                  <li>Trong suốt thời gian đào tạo chuẩn</li>
+                </ul>
+              </div>
+              <div class="info-box orange">
+                <h4>
+                  <i class="fas fa-clipboard-check"></i> Điều kiện xét cấp
+                </h4>
+                <ul>
+                  <li>Đáp ứng điều kiện theo NĐ 179/2026/NĐ-CP</li>
+                  <li>Đáp ứng điều kiện duy trì trong quá trình học</li>
+                  <li>Theo thẩm quyền của cơ quan Nhà nước</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 2: HỌC BỔNG KHUYẾN TÀI -->
+          <div class="tab-content" id="tab-talent">
+            <div class="sch-detail-header orange-bg">
+              <div class="sch-detail-icon orange">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="sch-detail-info">
+                <h3>Học bổng Khuyến tài</h3>
+                <p>
+                  Vinh danh thí sinh có thành tích học tập xuất sắc và tiềm năng
+                  nổi bật
+                </p>
+              </div>
+            </div>
+
+            <div class="sub-tabs">
+              <button
+                class="sub-tab-btn active"
+                onclick="switchSubTab(event, 'talent-main')"
+              >
+                <i class="fas fa-star"></i> Học bổng Tài năng
+              </button>
+              <button
+                class="sub-tab-btn"
+                onclick="switchSubTab(event, 'talent-japan')"
+              >
+                <i class="fas fa-torii-gate"></i> Học bổng Cầu nối Việt - Nhật
+              </button>
+              <button
+                class="sub-tab-btn"
+                onclick="switchSubTab(event, 'talent-honor')"
+              >
+                <i class="fas fa-globe"></i> Học bổng Hội nhập Quốc tế (Honor)
+              </button>
+            </div>
+
+            <!-- SUB TAB 1: HB TÀI NĂNG -->
+            <div class="sub-content active" id="talent-main">
+              <div class="info-box orange">
+                <h4>
+                  <i class="fas fa-medal"></i> Tổng quan Học bổng Tài năng
+                </h4>
+                <p>
+                  Học bổng Tài năng nhằm vinh danh thí sinh có thành tích học
+                  tập xuất sắc, bao gồm: HB Tài năng và Nghị lực Nguyễn Minh
+                  Châu, HB ngành Y Khoa, HB ngành trọng điểm và các HB chuyên
+                  biệt theo lĩnh vực đào tạo.
+                </p>
+              </div>
+              <h4 class="section-heading color-orange">
+                <i class="fas fa-table"></i> Bảng chi tiết các mức Học bổng Tài
+                năng
+              </h4>
+              <table class="sch-table">
+                <thead>
+                  <tr>
+                    <th class="col-level">MỨC HỌC BỔNG</th>
+                    <th class="col-industry">NGÀNH ÁP DỤNG</th>
+                    <th class="col-slots">SỐ SUẤT</th>
+                    <th class="col-criteria">TIÊU CHÍ XÉT DUYỆT</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- GROUP 1: 100% HP TOÀN KHÓA -->
+                  <tr class="row-group-gold">
+                    <td class="level-cell">
+                      <span class="level-badge gold"
+                        >100% HỌC PHÍ TOÀN KHÓA</span
+                      ><br />
+                      <em>(15 suất)</em>
+                    </td>
+                    <td>
+                      <strong>HB Tài năng & Nghị lực Nguyễn Minh Châu</strong
+                      ><br />
+                      <em>(Tất cả các ngành)</em>
+                    </td>
+                    <td><strong>15 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>Hạnh kiểm tốt, học lực giỏi 3 năm THPT</li>
+                        <li>
+                          Điểm trúng tuyển (TN THPT 2026) ≥
+                          <strong>26 điểm</strong>
+                        </li>
+                        <li>
+                          Điểm TB môn Tiếng Anh 3 năm THPT ≥
+                          <strong>8.0</strong> hoặc điểm thi TA ≥
+                          <strong>8.0</strong>
+                        </li>
+                        <li class="priority">
+                          Ưu tiên: Hoàn cảnh đặc biệt, đạt giải quốc tế/quốc
+                          gia/tỉnh/thành phố bậc THPT, đạt giải/huy chương nghệ
+                          thuật/thể thao cấp quốc tế/quốc gia/ Khu vực miền
+                          Trung - Tây Nguyên trong 3 năm gần nhất, đạt giải
+                          thưởng vì cộng đồng uy tín.
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <!-- GROUP 2: 50% HP TOÀN KHÓA -->
+                  <tr class="row-group-silver">
+                    <td rowspan="2" class="level-cell">
+                      <span class="level-badge silver"
+                        >50% HỌC PHÍ TOÀN KHÓA</span
+                      ><br />
+                      <em>(180 suất)</em>
+                    </td>
+                    <td>
+                      <strong>Ngành Y Khoa</strong>
+                    </td>
+                    <td><strong>30 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>
+                          Điểm xét tuyển 3 môn (TN THPT 2026) ≥
+                          <strong>26 điểm</strong> hoặc TBC học bạ 3 năm ≥ 9.0
+                        </li>
+                        <li>
+                          TBC Tiếng Anh 3 năm THPT ≥ <strong>7.0</strong> hoặc
+                          điểm thi TN THPT 2026 môn tiếng Anh ≥
+                          <strong>7.0</strong>
+                        </li>
+                        <li class="priority">
+                          Ưu tiên: <strong>IELTS ≥ 4.5</strong> hoặc tương
+                          đương, thành tích học thuật/nghiên cứu phù hợp ngành
+                          Sức khỏe
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="row-group-silver">
+                    <td>
+                      <strong>Tất cả các ngành</strong><br /><em
+                        >(Trừ Y Khoa, Dược học)</em
+                      >
+                    </td>
+                    <td><strong>150 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>
+                          Điểm xét tuyển 3 môn (TN THPT 2026) ≥
+                          <strong>24.5 điểm</strong> hoặc
+                          <strong>TBC học bạ 3 năm ≥ 8.7</strong> (3 năm lớp 10,
+                          11, 12)
+                        </li>
+                        <li>
+                          Điểm TB môn Tiếng Anh 3 năm THPT ≥
+                          <strong>7.0</strong> hoặc điểm thi TN THPT 2026 môn
+                          tiếng Anh ≥ <strong>7.0</strong>
+                        </li>
+                        <li class="priority">
+                          Ưu tiên: <strong>IELTS ≥ 4.5</strong> hoặc tương
+                          đương.
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <!-- GROUP 3: 30% HP TOÀN KHÓA -->
+                  <tr class="row-group-bronze">
+                    <td rowspan="2" class="level-cell">
+                      <span class="level-badge bronze"
+                        >30% HỌC PHÍ TOÀN KHÓA</span
+                      ><br />
+                      <em>(415 suất)</em>
+                    </td>
+                    <td>
+                      <strong>Ngành Dược học</strong>
+                    </td>
+                    <td><strong>15 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>
+                          Điểm xét tuyển 3 môn (TN THPT 2026) ≥
+                          <strong>24 điểm</strong> hoặc TBC học bạ (3 năm lớp
+                          10, 11, 12) ≥ <strong>8.3</strong>
+                        </li>
+                        <li>
+                          Điểm TB môn Tiếng Anh 3 năm THPT ≥
+                          <strong>7.0</strong> hoặc điểm thi TN THPT 2026 môn
+                          tiếng Anh ≥ <strong>7.0</strong>
+                        </li>
+                        <li class="priority">
+                          Ưu tiên: <strong>IELTS ≥ 4.5</strong> hoặc tương
+                          đương, thành tích học thuật/nghiên cứu phù hợp khối
+                          ngành Sức khỏe
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="row-group-bronze">
+                    <td>
+                      <strong>Tất cả các ngành</strong><br /><em
+                        >(Trừ Y Khoa, Dược học)</em
+                      >
+                    </td>
+                    <td><strong>400 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>
+                          Điểm xét tuyển 3 môn (TN THPT 2026) ≥
+                          <strong>24 điểm</strong> hoặc TBC học bạ (3 năm lớp
+                          10, 11, 12) ≥ <strong>8.3</strong>
+                        </li>
+                        <li>
+                          Điểm TB môn Tiếng Anh 3 năm THPT ≥
+                          <strong>7.0</strong> hoặc điểm thi TN THPT môn tiếng
+                          Anh ≥ <strong>7.0</strong>
+                        </li>
+                        <li class="priority">
+                          Ưu tiên: <strong>IELTS ≥ 4.5</strong> hoặc tương
+                          đương.
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <!-- GROUP 4: 30% HP NĂM 1 -->
+                  <tr class="row-group-green">
+                    <td rowspan="4" class="level-cell">
+                      <span class="level-badge green">30% HỌC PHÍ NĂM 1</span
+                      ><br />
+                      <em>(60 suất)</em>
+                    </td>
+                    <td>
+                      <strong>Học bổng Phát triển tài năng Y Khoa UDA</strong>
+                      <em>(Y Khoa)</em>
+                    </td>
+                    <td><strong>15 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>
+                          Điểm xét tuyển 3 môn (TN THPT 2026) ≥
+                          <strong>22 điểm</strong> hoặc TBC học bạ (3 năm lớp
+                          10, 11, 12) ≥ <strong>8.0</strong>
+                        </li>
+                        <li>
+                          Điểm TB môn Tiếng Anh 3 năm THPT ≥
+                          <strong>7.0</strong> hoặc điểm thi TN THPT môn tiếng
+                          Anh ≥ <strong>7.0</strong>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="row-group-green">
+                    <td>
+                      <strong
+                        >Học bổng phát triển tài năng Marketing - Truyền thông
+                        số UDA</strong
+                      ><br />
+                      <em>(Marketing, Truyền thông Đa phương tiện)</em>
+                    </td>
+                    <td><strong>15 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>
+                          Điểm xét tuyển 3 môn (TN THPT 2026) ≥
+                          <strong>20 điểm</strong> hoặc TBC học bạ (3 năm lớp
+                          10, 11, 12) ≥ <strong>8.0</strong>
+                        </li>
+                        <li>
+                          Có ít nhất 1 minh chứng phù hợp ngành Marketing -
+                          Truyền thông Đa phương tiện: Hồ sơ năng lực, dự án
+                          sáng tạo, sản phẩm truyền thông sáng tạo, hoạt động
+                          cộng đồng có ý nghĩa hoặc giải thưởng cấp
+                          trường/huyện/tỉnh trở lên.
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="row-group-green">
+                    <td>
+                      <strong>Học bổng Phát triển tài năng Pháp lý UDA</strong
+                      ><br />
+                      <em>(Luật, Luật Kinh tế)</em>
+                    </td>
+                    <td><strong>15 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>
+                          Điểm xét tuyển 3 môn (TN THPT 2026) ≥
+                          <strong>22 điểm</strong> hoặc TBC học bạ (3 năm lớp
+                          10, 11, 12) ≥ <strong>8.0</strong>
+                        </li>
+                        <li>
+                          Điểm TB môn Tiếng Anh 3 năm THPT ≥
+                          <strong>7.0</strong> hoặc điểm thi TN THPT môn tiếng
+                          Anh ≥ <strong>7.0</strong>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr class="row-group-green">
+                    <td>
+                      <strong>Học bổng Tài năng Công nghệ Chiến lược UDA</strong
+                      ><br />
+                      <em>(Trí tuệ nhân tạo, Thiết kế vi mạch bán dẫn)</em>
+                    </td>
+                    <td><strong>15 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>
+                          Điểm xét tuyển 3 môn (TN THPT 2026) ≥
+                          <strong>20 điểm</strong> hoặc TBC học bạ (3 năm lớp
+                          10, 11, 12) ≥ <strong>8.0</strong>
+                        </li>
+                        <li>
+                          Điểm TB môn Tiếng Anh 3 năm THPT ≥
+                          <strong>7.0</strong> hoặc điểm thi TN THPT môn tiếng
+                          Anh ≥ <strong>7.0</strong>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="info-box">
+                <h4>
+                  <i class="fas fa-clipboard-list"></i> Điều kiện ứng tuyển và
+                  xét cấp học bổng tài năng
+                </h4>
+                <p>
+                  Thí sinh đăng ký xét Học bổng Tài năng nộp hồ sơ về địa chỉ
+                  email:
+                  <strong><em>phongtuyensinh@donga.edu.vn</em></strong> hoặc nộp
+                  trực tiếp tại
+                  <strong>Phòng Tuyển sinh – Trường Đại học Đông Á</strong>. Hồ
+                  sơ gồm:
+                </p>
+                <ul>
+                  <li>Đơn đăng ký xét học bổng theo mẫu của Nhà trường;</li>
+                  <li>
+                    Bài viết cảm nhận về nghị lực, mục tiêu học tập và định
+                    hướng theo đuổi "Con đường thành công";
+                  </li>
+                  <li>
+                    Minh chứng thành tính học tập, bằng khen, giải thưởng, chứng
+                    chỉ ngoại ngữ, chứng chỉ/chứng nhận khác hoặc các minh chứng
+                    năng lực phù hợp với ngành/chương trình đăng ký (nếu có).
+                  </li>
+                </ul>
+                <h5 class="deadline-title">
+                  <strong>THỜI GIAN TIẾP NHẬN HỒ SƠ HỌC BỔNG TÀI NĂNG:</strong>
+                </h5>
+                <ul>
+                  <li><strong>Đợt 1: </strong>Đến hết 17h00 ngày 15/7/2026</li>
+                  <li><strong>Đợt 2: </strong>Đến hết 17h00 ngày 25/8/2026</li>
+                </ul>
+              </div>
+              <div class="info-box orange">
+                <h4>
+                  <i class="fas fa-clipboard-list"></i> Điều kiện duy trì HB Tài
+                  năng (từ năm 2 trở đi)
+                </h4>
+                <ul>
+                  <li>
+                    <strong>HB 100% HP toàn khóa:</strong> Điểm TCTL ≥
+                    <strong>3.5/4.0</strong>
+                  </li>
+                  <li>
+                    <strong>HB 50% HP toàn khóa:</strong> Điểm TCTL ≥
+                    <strong>3.4/4.0</strong>
+                  </li>
+                  <li>
+                    <strong>HB 30% HP toàn khóa:</strong> Điểm TCTL ≥
+                    <strong>3.3/4.0</strong>
+                  </li>
+                  <li>Kết quả rèn luyện loại <strong>Tốt</strong> trở lên</li>
+                  <li>
+                    Có tối thiểu <strong>01 minh chứng</strong> phát triển năng
+                    lực (NCKH, khởi nghiệp, cộng đồng...)
+                  </li>
+                  <li>
+                    Không vi phạm quy chế, không bị kỷ luật từ khiển trách trở
+                    lên
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- SUB TAB 2: HB CẦU NỐI VIỆT - NHẬT -->
+            <div class="sub-content" id="talent-japan">
+              <div class="info-box green">
+                <h4>
+                  <i class="fas fa-plane-departure"></i> Quyền lợi đặc biệt
+                </h4>
+                <p>
+                  Sinh viên có cơ hội nhận học bổng của doanh nghiệp và tham gia
+                  các chương trình giao lưu văn hóa, trao đổi và
+                  <strong
+                    >Internship (thực tập quốc tế) hưởng lương tại Nhật
+                    Bản</strong
+                  >.
+                </p>
+              </div>
+
+              <h4 class="section-heading color-purple">
+                <i class="fas fa-language"></i> Nhóm 1: Ngành Ngôn ngữ Nhật
+              </h4>
+              <table class="sch-table">
+                <thead>
+                  <tr>
+                    <th>MỨC HỌC BỔNG</th>
+                    <th>SỐ SUẤT</th>
+                    <th>ĐIỀU KIỆN</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="level-badge gold">100% HỌC PHÍ NĂM 1</span>
+                    </td>
+                    <td><strong>10 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>Nhập học trước <strong>25/08/2026</strong></li>
+                        <li>
+                          Điểm TN THPT ≥ <strong>19 điểm</strong> hoặc Tổ hợp XT
+                          bằng học bạ lớp 12 tổng 3 môn ≥
+                          <strong>21 điểm</strong>
+                        </li>
+                        <li>
+                          Hoặc có chứng chỉ tiếng Nhật <strong>N3</strong> trở
+                          lên
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="level-badge silver">100% HỌC PHÍ HKI</span>
+                    </td>
+                    <td><strong>25 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>Nhập học trước <strong>25/08/2026</strong></li>
+                        <li>
+                          Điểm TN THPT ≥ <strong>18 điểm</strong> hoặc Tổ hợp XT
+                          bằng học bạ lớp 12 tổng 3 môn ≥
+                          <strong>19 điểm</strong>
+                        </li>
+                        <li>
+                          Hoặc có chứng chỉ tiếng Nhật <strong>N4</strong> trở
+                          lên
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="level-badge bronze">70% HỌC PHÍ HKI</span>
+                    </td>
+                    <td><strong>35 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>Nhập học trước <strong>25/08/2026</strong></li>
+                        <li>
+                          Điểm TN THPT ≥ <strong>17 điểm</strong> hoặc Tổ hợp XT
+                          bằng học bạ lớp 12 tổng 3 môn ≥
+                          <strong>17 điểm</strong>
+                        </li>
+                        <li>
+                          Hoặc có chứng chỉ tiếng Nhật <strong>N5</strong> trở
+                          lên
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h4 class="section-heading color-purple">
+                <i class="fas fa-microchip"></i> Nhóm 2: Các ngành Kỹ thuật
+              </h4>
+              <div class="flex-wrap mb-20">
+                <span class="tag-pill purple">Công nghệ Thông tin</span>
+                <span class="tag-pill purple">Trí tuệ nhân tạo</span>
+                <span class="tag-pill purple">CNKT Xây dựng</span>
+                <span class="tag-pill purple">CN Thực phẩm</span>
+                <span class="tag-pill purple">Nông nghiệp</span>
+                <span class="tag-pill purple">Dinh dưỡng</span>
+              </div>
+
+              <table class="sch-table">
+                <thead>
+                  <tr>
+                    <th>MỨC HỌC BỔNG</th>
+                    <th>SỐ SUẤT</th>
+                    <th>ĐIỀU KIỆN</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="level-badge gold">100% HỌC PHÍ NĂM 1</span>
+                    </td>
+                    <td><strong>10 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>Nhập học trước <strong>25/08/2026</strong></li>
+                        <li>
+                          Điểm TN THPT ≥ <strong>21 điểm</strong> hoặc Tổ hợp XT
+                          bằng học bạ lớp 12 tổng 3 môn ≥
+                          <strong>22.5 điểm</strong>
+                        </li>
+                        <li class="priority">
+                          Ưu tiên có chứng chỉ tiếng Nhật N4, N5
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="level-badge silver">100% HỌC PHÍ HKI</span>
+                    </td>
+                    <td><strong>20 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>Nhập học trước <strong>25/08/2026</strong></li>
+                        <li>
+                          Điểm TN THPT ≥ <strong>20 điểm</strong> hoặc Tổ hợp XT
+                          bằng học bạ lớp 12 tổng 3 môn ≥
+                          <strong>21 điểm</strong>
+                        </li>
+                        <li class="priority">
+                          Ưu tiên có chứng chỉ tiếng Nhật N4, N5
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="level-badge bronze">70% HỌC PHÍ HKI</span>
+                    </td>
+                    <td><strong>30 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>Nhập học trước <strong>25/08/2026</strong></li>
+                        <li>
+                          Điểm TN THPT ≥ <strong>19 điểm</strong> hoặc Tổ hợp XT
+                          bằng học bạ lớp 12 tổng 3 môn ≥
+                          <strong>20 điểm</strong>
+                        </li>
+                        <li class="priority">
+                          Ưu tiên có chứng chỉ tiếng Nhật N4, N5
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="info-box">
+                <h4>
+                  <i class="fas fa-clipboard-list"></i> Điều kiện duy trì HB
+                  100% học phí năm 1
+                </h4>
+                <p>
+                  Đối với Học bổng 100% học phí năm thứ nhất, sinh viên được
+                  tiếp tục hưởng phần học bổng <strong>học kỳ II</strong> nếu:
+                </p>
+                <ul>
+                  <li>Điểm rèn luyện loại <strong>Tốt</strong> trở lên</li>
+                  <li>Điểm TCTL học kỳ I ≥ <strong>3.2/4.0</strong></li>
+                  <li>Không bị kỷ luật từ mức khiển trách trở lên</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- SUB TAB 3: HB HONOR -->
+            <div class="sub-content" id="talent-honor">
+              <div class="info-box">
+                <h4>
+                  <i class="fas fa-globe"></i> Học bổng Hội nhập Quốc tế -
+                  Chương trình Honor
+                </h4>
+                <p>
+                  Dành cho thí sinh đăng ký, trúng tuyển và nhập học vào các
+                  ngành thuộc chương trình Honor.
+                </p>
+              </div>
+              <h4 class="section-heading color-green">
+                <i class="fas fa-list"></i> Các ngành thuộc chương trình Honor
+              </h4>
+              <div class="flex-wrap mb-24">
+                <span class="tag-pill green">Quản trị Kinh doanh</span>
+                <span class="tag-pill green">Marketing</span>
+                <span class="tag-pill green"
+                  >Logistics & QL Chuỗi Cung ứng</span
+                >
+                <span class="tag-pill green">Công nghệ Thông tin</span>
+                <span class="tag-pill green">Quản trị Khách sạn</span>
+              </div>
+              <table class="sch-table">
+                <thead>
+                  <tr>
+                    <th>Mức HB</th>
+                    <th>Số suất</th>
+                    <th>Tiêu chí xét duyệt</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="level-badge bronze">30% HP TOÀN KHÓA</span>
+                    </td>
+                    <td><strong>50 suất</strong></td>
+                    <td>
+                      <ul class="condition-list">
+                        <li>
+                          Đạt chuẩn tiếng Anh đầu vào chương trình Honor:
+                          <strong>IELTS ≥ 4.5</strong> hoặc tương đương
+                        </li>
+                        <li>Được chính thức học chuyên ngành và cấp HB</li>
+                        <li>
+                          Trường hợp chưa đạt chuẩn: tham gia khóa Tiếng Anh dự
+                          bị, HB kích hoạt khi đạt chuẩn
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="info-box orange">
+                <h4>
+                  <i class="fas fa-clipboard-list"></i> Điều kiện duy trì HB
+                  Honor
+                </h4>
+                <ul>
+                  <li>
+                    Kết quả rèn luyện từ loại <strong>Tốt</strong> trở lên
+                  </li>
+                  <li>Điểm TCTL năm học ≥ <strong>3.2/4.0</strong></li>
+                  <li>Hoàn thành lộ trình năng lực tiếng Anh theo quy định</li>
+                  <li>
+                    <strong>Từ năm 3:</strong> Đạt chuẩn tiếng Anh tối thiểu
+                    <strong>IELTS 5.5</strong> hoặc tương đương
+                  </li>
+                  <li>Không bị kỷ luật từ mức khiển trách trở lên</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: HB KHUYẾN HỌC -->
+          <div class="tab-content" id="tab-encourage">
+            <div class="sch-detail-header blue-bg">
+              <div class="sch-detail-icon blue">
+                <i class="fas fa-book-reader"></i>
+              </div>
+              <div class="sch-detail-info">
+                <h3>Học bổng Khuyến học</h3>
+                <p>
+                  Đồng hành cùng tân sinh viên khóa 2026, chia sẻ chi phí ban
+                  đầu với phụ huynh và sinh viên
+                </p>
+              </div>
+            </div>
+            <div class="info-box green">
+              <h4><i class="fas fa-gift"></i> Cơ cấu học bổng</h4>
+              <p>
+                Học bổng Khuyến học gồm <strong>2 phần</strong>: Tiền mặt cấp
+                trừ vào học phí và
+                <strong>bộ trang dụng học đường trị giá 1.500.000 đồng</strong>
+                (01 áo sơ mi đồng phục, 01 ba lô UDA, 02 bộ đồng phục thể thao).
+              </p>
+            </div>
+            <table class="sch-table">
+              <thead>
+                <tr>
+                  <th>Mức HB</th>
+                  <th>Cơ cấu</th>
+                  <th>Điều kiện áp dụng</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="level-badge gold">MỨC 1: 6.000.000đ</span>
+                  </td>
+                  <td>
+                    <ul class="condition-list">
+                      <li>
+                        <strong>4.500.000đ</strong> tiền mặt (trừ học phí)
+                      </li>
+                      <li><strong>1.500.000đ</strong> trang dụng học đường</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="condition-list">
+                      <li>Trúng tuyển chính thức năm 2026</li>
+                      <li>
+                        Hoàn tất nhập học
+                        <strong>đợt 1 trước 24/08/2026</strong>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="level-badge silver">MỨC 2: 4.000.000đ</span>
+                  </td>
+                  <td>
+                    <ul class="condition-list">
+                      <li>
+                        <strong>2.500.000đ</strong> tiền mặt (trừ học phí)
+                      </li>
+                      <li><strong>1.500.000đ</strong> trang dụng học đường</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="condition-list">
+                      <li>Trúng tuyển chính thức năm 2026</li>
+                      <li>Nhập học từ <strong>24/08 - 31/08/2026</strong></li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="info-box orange">
+              <h4>
+                <i class="fas fa-info-circle"></i> Nguyên tắc cấp trừ học phí
+              </h4>
+              <p>Phần tiền mặt được chia thành <strong>02 lần</strong>:</p>
+              <ul>
+                <li>
+                  <strong>50%</strong> cấp trừ vào học phí
+                  <strong>HKI năm thứ nhất</strong>
+                </li>
+                <li>
+                  <strong>50%</strong> cấp trừ vào học phí
+                  <strong>HKI năm thứ hai</strong>
+                </li>
+              </ul>
+              <p class="mt-24">
+                <strong>Ví dụ:</strong> HB Mức 1 (6 triệu): 2.250.000đ trừ HKI
+                năm 1 + 2.250.000đ trừ HKI năm 2
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE SECTION -->
+    <section class="timeline-section" id="timeline">
+      <div class="timeline-inner">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge">
+            <i class="fas fa-calendar-alt"></i> Mốc thời gian quan trọng
+          </div>
+          <h2 class="section-title">
+            Timeline <span class="text-green">Tuyển Sinh 2026</span>
+          </h2>
+          <p class="section-desc">
+            Các mốc thời gian quan trọng thí sinh cần lưu ý để không bỏ lỡ cơ
+            hội nhận học bổng
+          </p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-content">
+              <div class="timeline-date">Đợt 1 - Trước 15/07/2026</div>
+              <h4>Nộp hồ sơ HB Tài năng Đợt 1</h4>
+              <p>
+                Hạn chót: <strong>17h00 ngày 15/07/2026</strong>. Thí sinh gửi
+                hồ sơ về phongtuyensinh@donga.edu.vn
+              </p>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-content">
+              <div class="timeline-date">Trước 24/08/2026</div>
+              <h4>Nhập học đợt 1 - HB Khuyến học Mức 1</h4>
+              <p>
+                Hoàn tất thủ tục nhập học để nhận
+                <strong>Học bổng Khuyến học 6.000.000đ</strong> + bộ trang dụng
+                học đường.
+              </p>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-content">
+              <div class="timeline-date">Đợt 2 - Trước 25/08/2026</div>
+              <h4>Nộp hồ sơ HB Tài năng Đợt 2 & HB Cầu nối VN-Nhật</h4>
+              <p>
+                Hạn chót nộp HB Tài năng:
+                <strong>17h00 ngày 25/08/2026</strong>. Các HB Cầu nối VN-Nhật
+                cũng yêu cầu nhập học trước ngày này.
+              </p>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-content">
+              <div class="timeline-date">24/08 - 31/08/2026</div>
+              <h4>Nhập học đợt 2 - HB Khuyến học Mức 2</h4>
+              <p>
+                Thí sinh nhập học trong giai đoạn này nhận
+                <strong>Học bổng Khuyến học 4.000.000đ</strong> + bộ trang dụng
+                học đường.
+              </p>
+            </div>
+            <div class="timeline-dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRINCIPLES SECTION -->
+    <section class="principles">
+      <div class="principles-inner">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge">
+            <i class="fas fa-balance-scale"></i> Nguyên tắc chung
+          </div>
+          <h2 class="section-title">Nguyên Tắc Xét Cấp Học Bổng</h2>
+          <p class="section-desc">
+            Các quy định quan trọng thí sinh cần nắm rõ khi đăng ký và nhận học
+            bổng
+          </p>
+        </div>
+        <div class="principles-grid">
+          <div class="principle-card animate-on-scroll">
+            <div class="principle-number">1</div>
+            <h4>Không trùng lặp học bổng</h4>
+            <p>
+              Sinh viên hưởng HB Quốc gia thì không hưởng các HB do Trường cấp.
+              Sinh viên đủ điều kiện nhiều HB chỉ được nhận
+              <strong>01 HB có giá trị cao nhất</strong>.
+            </p>
+          </div>
+          <div class="principle-card animate-on-scroll">
+            <div class="principle-number">2</div>
+            <h4>Ưu tiên theo thứ tự</h4>
+            <p>
+              Khi nhiều thí sinh có cùng điều kiện ở cuối danh sách, ưu tiên
+              theo thứ tự: (i) Đặt UDA trong 3 nguyện vọng đầu; (ii) Điểm đầu
+              vào cao hơn; (iii) Nộp hồ sơ sớm hơn.
+            </p>
+          </div>
+          <div class="principle-card animate-on-scroll">
+            <div class="principle-number">3</div>
+            <h4>Khấu trừ trực tiếp học phí</h4>
+            <p>
+              Các HB do Trường cấp được khấu trừ trực tiếp vào học phí từng học
+              kỳ và quyết toán cuối khóa. Sinh viên thôi học phải hoàn trả phần
+              HB đã cấp trừ.
+            </p>
+          </div>
+          <div class="principle-card animate-on-scroll">
+            <div class="principle-number">4</div>
+            <h4>Trang dụng học đường</h4>
+            <p>
+              <strong>Tất cả sinh viên</strong> hoàn thành thủ tục nhập học đều
+              được tặng bộ trang dụng học đường trị giá
+              <strong>1.500.000 đồng</strong> (áo đồng phục, ba lô, đồ thể
+              thao).
+            </p>
+          </div>
+          <div class="principle-card animate-on-scroll">
+            <div class="principle-number">5</div>
+            <h4>Chuyển ngành/chương trình</h4>
+            <p>
+              HB Khuyến học được xem xét bảo lưu. Các HB gắn với ngành cụ thể
+              chỉ áp dụng khi chuyển sang ngành vẫn thuộc phạm vi hưởng HB tương
+              ứng.
+            </p>
+          </div>
+          <div class="principle-card animate-on-scroll">
+            <div class="principle-number">6</div>
+            <h4>Xét theo thứ tự ưu tiên</h4>
+            <p>
+              Sinh viên được xét duyệt cấp HB theo
+              <strong>thứ tự ưu tiên nộp hồ sơ</strong>, đồng thời thực hiện thủ
+              tục nhập học và đáp ứng đầy đủ điều kiện quy định.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta" id="register">
+      <div class="cta-inner animate-on-scroll">
+        <div class="cta-icon"><i class="fas fa-paper-plane"></i></div>
+        <h2 class="cta-title">Đăng Ký Xét Tuyển & Nhận Học Bổng 2026</h2>
+        <p class="cta-desc">
+          Để lại thông tin để nhận tư vấn chi tiết về ngành học, học bổng và lộ
+          trình trở thành tân sinh viên Đại học Đông Á
+        </p>
+        <form class="cta-form" onsubmit="return false;">
+          <div class="form-group">
+            <label for="fullName">Họ và tên</label>
+            <input
+              id="fullName"
+              name="fullName"
+              type="text"
+              placeholder="Họ và tên..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="mail">Email</label>
+            <input
+              id="mail"
+              name="mail"
+              type="email"
+              placeholder="Email..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Số điện thoại</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="Số điện thoại..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="province">Tỉnh / Thành phố</label>
+            <input
+              id="province"
+              name="province"
+              type="text"
+              placeholder="Nhập tên tỉnh/thành phố..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="nganh">Ngành học quan tâm</label>
+            <select id="nganh" name="nganh" required>
+              <option value="">-- Chọn ngành học --</option>
+              <option value="Ngôn ngữ Trung Quốc">Ngôn ngữ Trung Quốc</option>
+              <option value="Ngôn ngữ Hàn Quốc">Ngôn ngữ Hàn Quốc</option>
+              <option value="Ngôn ngữ Nhật">Ngôn ngữ Nhật</option>
+              <option value="Ngôn ngữ Anh">Ngôn ngữ Anh</option>
+              <option value="Quản trị Kinh doanh">Quản trị Kinh doanh</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Logistics & QL Chuỗi Cung ứng">
+                Logistics & QL Chuỗi Cung ứng
+              </option>
+              <option value="Thương mại điện tử">Thương mại điện tử</option>
+              <option value="Kế toán">Kế toán</option>
+              <option value="Tài chính ngân hàng">Tài chính ngân hàng</option>
+              <option value="Kinh doanh Quốc tế">Kinh doanh Quốc tế</option>
+              <option value="Truyền thông Đa phương tiện">
+                Truyền thông Đa phương tiện
+              </option>
+              <option value="Quản trị nhân lực">Quản trị nhân lực</option>
+              <option value="Quản trị DV Du lịch & Lữ hành">
+                Quản trị DV Du lịch & Lữ hành
+              </option>
+              <option value="Quản trị Khách sạn">Quản trị Khách sạn</option>
+              <option value="Quản trị Nhà hàng & DV Ăn uống">
+                Quản trị Nhà hàng & DV Ăn uống
+              </option>
+              <option value="CNKT Ô tô">CNKT Ô tô</option>
+              <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+              <option value="Kỹ thuật máy tính">Kỹ thuật máy tính</option>
+              <option value="Trí tuệ nhân tạo">Trí tuệ nhân tạo</option>
+              <option value="Đồ hoạ">Đồ hoạ</option>
+              <option value="CNKT Điều khiển và Tự động hóa">
+                CNKT Điều khiển và Tự động hóa
+              </option>
+              <option value="CNKT Điện, Điện tử">CNKT Điện, Điện tử</option>
+              <option value="CNKT Xây dựng">CNKT Xây dựng</option>
+              <option value="Kỹ thuật Cơ điện tử">Kỹ thuật Cơ điện tử</option>
+              <option value="Công nghệ Thực phẩm">Công nghệ Thực phẩm</option>
+              <option value="Công nghệ sinh học">Công nghệ sinh học</option>
+              <option value="Nông nghiệp">Nông nghiệp</option>
+              <option value="Thú Y">Thú Y</option>
+              <option value="Luật">Luật</option>
+              <option value="Luật Kinh tế">Luật Kinh tế</option>
+              <option value="Y Khoa">Y Khoa</option>
+              <option value="Dược học">Dược học</option>
+              <option value="Điều dưỡng">Điều dưỡng</option>
+              <option value="Kỹ thuật Phục hồi Chức năng">
+                Kỹ thuật Phục hồi Chức năng
+              </option>
+              <option value="Hộ sinh">Hộ sinh</option>
+              <option value="Dinh dưỡng">Dinh dưỡng</option>
+              <option value="Giáo dục học">Giáo dục học</option>
+              <option value="Tâm lý học">Tâm lý học</option>
+              <option value="Quản lý văn hoá">Quản lý văn hoá</option>
+              <option value="Văn học (Ứng dụng)">Văn học (Ứng dụng)</option>
+            </select>
+          </div>
+          <button type="submit">Đăng ký ngay</button>
+        </form>
+        <div class="cta-contact">
+          <div class="cta-contact-item">
+            <i class="fas fa-envelope"></i
+            ><span>phongtuyensinh@donga.edu.vn</span>
+          </div>
+          <div class="cta-contact-item">
+            <i class="fas fa-phone"></i><span>0236 3519 929</span>
+          </div>
+          <div class="cta-contact-item">
+            <i class="fas fa-mobile-alt"></i><span>076 858 8885</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTER POPUP MODAL -->
+    <div class="modal" id="registerModal" aria-hidden="true">
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="registerModalTitle">
+        <div class="modal-header">
+          <h3 id="registerModalTitle">Đăng ký nhận tư vấn ngay</h3>
+          <button class="modal-close" type="button" aria-label="Đóng pop-up">×</button>
+        </div>
+        <div class="modal-body">
+          <p>Vui lòng điền thông tin dưới đây để nhận tư vấn ngành học, học bổng và lịch xét tuyển sớm nhất.</p>
+          <form class="modal-form" id="modalRegisterForm" onsubmit="return false;">
+            <div class="form-group">
+              <label for="modalFullName">Họ và tên</label>
+              <input id="modalFullName" name="fullName" type="text" placeholder="Họ và tên..." required />
+            </div>
+            <div class="form-group">
+              <label for="modalMail">Email</label>
+              <input id="modalMail" name="mail" type="email" placeholder="Email..." required />
+            </div>
+            <div class="form-group">
+              <label for="modalPhone">Số điện thoại</label>
+              <input id="modalPhone" name="phone" type="tel" placeholder="Số điện thoại..." required />
+            </div>
+            <div class="form-group">
+              <label for="modalProvince">Tỉnh / Thành phố</label>
+              <input id="modalProvince" name="province" type="text" placeholder="Tỉnh / Thành phố..." required />
+            </div>
+            <div class="form-group">
+              <label for="modalNganh">Ngành học quan tâm</label>
+              <select id="modalNganh" name="nganh" required>
+                <option value="">-- Chọn ngành học --</option>
+                <option value="Ngôn ngữ Trung Quốc">Ngôn ngữ Trung Quốc</option>
+                <option value="Ngôn ngữ Hàn Quốc">Ngôn ngữ Hàn Quốc</option>
+                <option value="Ngôn ngữ Nhật">Ngôn ngữ Nhật</option>
+                <option value="Ngôn ngữ Anh">Ngôn ngữ Anh</option>
+                <option value="Quản trị Kinh doanh">Quản trị Kinh doanh</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Logistics & QL Chuỗi Cung ứng">Logistics & QL Chuỗi Cung ứng</option>
+                <option value="Thương mại điện tử">Thương mại điện tử</option>
+                <option value="Kế toán">Kế toán</option>
+                <option value="Tài chính ngân hàng">Tài chính ngân hàng</option>
+                <option value="Kinh doanh Quốc tế">Kinh doanh Quốc tế</option>
+                <option value="Truyền thông Đa phương tiện">Truyền thông Đa phương tiện</option>
+                <option value="Quản trị nhân lực">Quản trị nhân lực</option>
+                <option value="Quản trị DV Du lịch & Lữ hành">Quản trị DV Du lịch & Lữ hành</option>
+                <option value="Quản trị Khách sạn">Quản trị Khách sạn</option>
+                <option value="Quản trị Nhà hàng & DV Ăn uống">Quản trị Nhà hàng & DV Ăn uống</option>
+                <option value="CNKT Ô tô">CNKT Ô tô</option>
+                <option value="Công nghệ thông tin">Công nghệ thông tin</option>
+                <option value="Kỹ thuật máy tính">Kỹ thuật máy tính</option>
+                <option value="Trí tuệ nhân tạo">Trí tuệ nhân tạo</option>
+                <option value="Đồ hoạ">Đồ hoạ</option>
+                <option value="CNKT Điều khiển và Tự động hóa">CNKT Điều khiển và Tự động hóa</option>
+                <option value="CNKT Điện, Điện tử">CNKT Điện, Điện tử</option>
+                <option value="CNKT Xây dựng">CNKT Xây dựng</option>
+                <option value="Kỹ thuật Cơ điện tử">Kỹ thuật Cơ điện tử</option>
+                <option value="Công nghệ Thực phẩm">Công nghệ Thực phẩm</option>
+                <option value="Công nghệ sinh học">Công nghệ sinh học</option>
+                <option value="Nông nghiệp">Nông nghiệp</option>
+                <option value="Thú Y">Thú Y</option>
+                <option value="Luật">Luật</option>
+                <option value="Luật Kinh tế">Luật Kinh tế</option>
+                <option value="Y Khoa">Y Khoa</option>
+                <option value="Dược học">Dược học</option>
+                <option value="Điều dưỡng">Điều dưỡng</option>
+                <option value="Kỹ thuật Phục hồi Chức năng">Kỹ thuật Phục hồi Chức năng</option>
+                <option value="Hộ sinh">Hộ sinh</option>
+                <option value="Dinh dưỡng">Dinh dưỡng</option>
+                <option value="Giáo dục học">Giáo dục học</option>
+                <option value="Tâm lý học">Tâm lý học</option>
+                <option value="Quản lý văn hoá">Quản lý văn hoá</option>
+                <option value="Văn học (Ứng dụng)">Văn học (Ứng dụng)</option>
+              </select>
+            </div>
+            <button type="submit">Gửi đăng ký</button>
+          </form>
+          <p class="modal-note">Thông tin của bạn sẽ được bảo mật và tư vấn nhanh trong 24h làm việc.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- STATUS POPUP -->
+    <div class="status-modal" id="statusModal" aria-hidden="true">
+      <div class="status-dialog" role="alertdialog" aria-live="polite" aria-labelledby="statusTitle" aria-describedby="statusMessage">
+        <div class="status-icon success" id="statusIcon">✓</div>
+        <h3 class="status-title" id="statusTitle">Đăng ký thành công</h3>
+        <p class="status-message" id="statusMessage">Chúng tôi sẽ liên hệ với bạn sớm nhất.</p>
+        <div class="status-actions">
+          <button type="button" id="statusCloseBtn">Đóng</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <img
+                src="chon-nganh-hoc/img/logo-white-uda.png"
+                alt="Logo Đại học Đông Á"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'grid';
+                "
+              />
+              <!-- <span class="footer-logo-fallback" style="display:none;">UDA</span> -->
+            </div>
+            <p>© 2026 UDA - Trang thông tin xét học bổng</p>
+            <!-- <p>Trang thông tin xét học bổng</p> -->
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-campus">
+              <h4>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3 2 10h2v10h6v-6h4v6h6V10h2L12 3z" />
+                </svg>
+                <span>Đại học Đông Á Đà Nẵng</span>
+              </h4>
+              <p><strong>Name:</strong> Đại học Đông Á Đà Nẵng</p>
+              <p>
+                <strong>Address:</strong> 33 Xô Viết Nghệ Tĩnh, P. Hòa Cường,
+                TP. Đà Nẵng
+              </p>
+              <p><strong>Hotline:</strong> 0236 3519 929</p>
+            </div>
+            <div class="footer-campus">
+              <h4>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3 2 10h2v10h6v-6h4v6h6V10h2L12 3z" />
+                </svg>
+                <span>Đại học Đông Á phân hiệu Đắk Lắk</span>
+              </h4>
+              <p><strong>Name:</strong> Đại học Đông Á phân hiệu Đắk Lắk</p>
+              <p>
+                <strong>Address:</strong> 40 Phạm Hùng, P. Tân An, tỉnh Đắk Lắk
+              </p>
+              <p><strong>Hotline:</strong> 0262 7109 999</p>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Kết nối với chúng tôi</h4>
+            <ul class="footer-social">
+              <li>
+                <a
+                  href="https://donga.edu.vn/"
+                  target="_blank"
+                  aria-label="Website Đại học Đông Á"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm7.7 9h-3.1a15 15 0 0 0-1.2-5A8 8 0 0 1 19.7 11zM12 4.1c.9 1.1 1.8 3.2 2.2 5.9H9.8c.4-2.7 1.3-4.8 2.2-5.9zM8.6 6a15 15 0 0 0-1.2 5H4.3A8 8 0 0 1 8.6 6zM4.3 13h3.1c.2 1.9.7 3.6 1.2 5a8 8 0 0 1-4.3-5zm7.7 6c-.9-1.1-1.8-3.2-2.2-6h4.4c-.4 2.8-1.3 4.9-2.2 6zm3.4-1a15 15 0 0 0 1.2-5h3.1a8 8 0 0 1-4.3 5z"
+                    />
+                  </svg>
+                  <span>Đại học Đông Á</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/dongatuyensinh"
+                  target="_blank"
+                  aria-label="Tuyển sinh Đại học Đông Á"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6h1.7V4.8c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.3V11H7v3h3.1v8h3.4z"
+                    />
+                  </svg>
+                  <span>Tuyển sinh Đại học Đông Á</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@truongdaihocdonga"
+                  target="_blank"
+                  aria-label="TikTok Đại học Đông Á"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M17.8 8.3c-1.4-.1-2.7-.8-3.5-1.9v8.4a4.8 4.8 0 1 1-4.1-4.7v2.3a2.5 2.5 0 1 0 1.8 2.4V2h2.3c.2 2 1.8 3.6 3.8 3.8v2.5z"
+                    />
+                  </svg>
+                  <span>Đại học Đông Á</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@Daihocdongashort"
+                  target="_blank"
+                  aria-label="YouTube Đại học Đông Á"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M23 12s0-3.3-.4-4.9c-.2-.9-.9-1.6-1.8-1.8C19.2 5 12 5 12 5s-7.2 0-8.8.3c-.9.2-1.6.9-1.8 1.8C1 8.7 1 12 1 12s0 3.3.4 4.9c.2.9.9 1.6 1.8 1.8C4.8 19 12 19 12 19s7.2 0 8.8-.3c.9-.2 1.6-.9 1.8-1.8.4-1.6.4-4.9.4-4.9zM10 15.5v-7l6 3.5-6 3.5z"
+                    />
+                  </svg>
+                  <span>Đại học Đông Á</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function switchTab(event, tabId) {
+        document
+          .querySelectorAll(".tab-btn")
+          .forEach((btn) => btn.classList.remove("active"));
+        document
+          .querySelectorAll(".tab-content")
+          .forEach((content) => content.classList.remove("active"));
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabId).classList.add("active");
+      }
+
+      function switchSubTab(event, subTabId) {
+        const parent = event.currentTarget.closest(".tab-content");
+        parent
+          .querySelectorAll(".sub-tab-btn")
+          .forEach((btn) => btn.classList.remove("active"));
+        parent
+          .querySelectorAll(".sub-content")
+          .forEach((content) => content.classList.remove("active"));
+        event.currentTarget.classList.add("active");
+        document.getElementById(subTabId).classList.add("active");
+      }
+
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("visible");
+        });
+      }, observerOptions);
+
+      document
+        .querySelectorAll(".animate-on-scroll")
+        .forEach((el) => observer.observe(el));
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target)
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+
+      window.addEventListener("scroll", () => {
+        const header = document.querySelector(".header");
+        header.style.boxShadow =
+          window.scrollY > 50 ? "0 4px 20px rgba(0,0,0,0.05)" : "none";
+      });
+
+      // Xử lý khi submit form đăng ký
+    document.querySelector('.cta-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Lấy nút submit và hiển thị trạng thái đang gửi
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Đang gửi...';
+        submitBtn.disabled = true;
+        
+        // Thu thập dữ liệu từ form
+        const formData = {
+            timestamp: new Date().toLocaleString('vi-VN'),
+            fullName: document.getElementById('fullName').value.trim(),
+            mail: document.getElementById('mail').value.trim(),
+            phone: document.getElementById('phone').value.trim(),
+            province: document.getElementById('province').value.trim(),
+            nganh: document.getElementById('nganh').value
+        };
+        
+        // ⚠️ THAY THẾ URL NÀY BẰNG URL WEB APP CỦA BẠN SAU KHI DEPLOY
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx7gmcurFfhyW6Co-mafehRm81Rr2SoK6ePVK5qVtDI63POilcMxd0xLYs31MnuyZ49Uw/exec';
+        
+        // Gửi dữ liệu đến Google Apps Script
+        fetch(GOOGLE_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors', // Bắt buộc cho Google Apps Script
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(() => {
+            showStatusModal('success', 'Đăng ký thành công', 'Chúng tôi sẽ liên hệ với bạn sớm nhất.');
+            // Reset form sau khi gửi thành công
+            document.querySelector('.cta-form').reset();
+        })
+        .catch(error => {
+            console.error('Lỗi:', error);
+            showStatusModal('error', 'Lỗi đăng ký', 'Có lỗi xảy ra. Vui lòng thử lại hoặc liên hệ hotline để được hỗ trợ.');
+        })
+        .finally(() => {
+            // Khôi phục trạng thái nút
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        });
+    });
+    
+    let statusAutoCloseTimer;
+
+    function closeStatusModal() {
+      const statusModal = document.getElementById('statusModal');
+      if (!statusModal) return;
+      statusModal.classList.remove('open');
+      statusModal.setAttribute('aria-hidden', 'true');
+      clearTimeout(statusAutoCloseTimer);
+    }
+
+    function showStatusModal(type, title, message) {
+      const statusModal = document.getElementById('statusModal');
+      const statusIcon = document.getElementById('statusIcon');
+      const statusTitle = document.getElementById('statusTitle');
+      const statusMessage = document.getElementById('statusMessage');
+      if (!statusModal || !statusIcon || !statusTitle || !statusMessage) return;
+
+      statusIcon.className = 'status-icon ' + type;
+      statusIcon.textContent = type === 'success' ? '✓' : '!';
+      statusTitle.textContent = title;
+      statusMessage.textContent = message;
+      statusModal.classList.add('open');
+      statusModal.setAttribute('aria-hidden', 'false');
+
+      clearTimeout(statusAutoCloseTimer);
+      statusAutoCloseTimer = setTimeout(closeStatusModal, 4500);
+    }
+
+    const statusModal = document.getElementById('statusModal');
+    const statusCloseBtn = document.getElementById('statusCloseBtn');
+    statusCloseBtn?.addEventListener('click', closeStatusModal);
+    statusModal?.addEventListener('click', (event) => {
+      if (event.target === statusModal) closeStatusModal();
+    });
+    window.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && statusModal?.classList.contains('open')) {
+        closeStatusModal();
+      }
+    });
+
+    // Đóng/Mở popup đăng ký
+    const registerModal = document.getElementById('registerModal');
+    const registerCloseBtn = registerModal.querySelector('.modal-close');
+    const modalOpenButtons = document.querySelectorAll('a[href="#register"]');
+    const modalForm = document.getElementById('modalRegisterForm');
+
+    function closeRegisterModal() {
+      registerModal.classList.remove('open');
+      registerModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = 'auto';
+    }
+
+    function openRegisterModal(event) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      registerModal.classList.add('open');
+      registerModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      const firstInput = registerModal.querySelector('input, select');
+      if (firstInput) firstInput.focus();
+    }
+
+    modalOpenButtons.forEach((btn) => btn.addEventListener('click', openRegisterModal));
+    registerCloseBtn.addEventListener('click', closeRegisterModal);
+    registerModal.addEventListener('click', (event) => {
+      if (event.target === registerModal) closeRegisterModal();
+    });
+    window.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && registerModal.classList.contains('open')) {
+        closeRegisterModal();
+      }
+    });
+
+    modalForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Đang gửi...';
+      submitBtn.disabled = true;
+
+      const formData = {
+        timestamp: new Date().toLocaleString('vi-VN'),
+        fullName: document.getElementById('modalFullName').value.trim(),
+        mail: document.getElementById('modalMail').value.trim(),
+        phone: document.getElementById('modalPhone').value.trim(),
+        province: document.getElementById('modalProvince').value.trim(),
+        nganh: document.getElementById('modalNganh').value
+      };
+
+      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx7gmcurFfhyW6Co-mafehRm81Rr2SoK6ePVK5qVtDI63POilcMxd0xLYs31MnuyZ49Uw/exec';
+
+      fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+        .then(() => {
+          showStatusModal('success', 'Đăng ký thành công', 'Chúng tôi sẽ liên hệ với bạn sớm nhất.');
+          this.reset();
+          closeRegisterModal();
+        })
+        .catch((error) => {
+          console.error('Lỗi:', error);
+          showStatusModal('error', 'Lỗi đăng ký', 'Có lỗi xảy ra. Vui lòng thử lại hoặc liên hệ hotline để được hỗ trợ.');
+        })
+        .finally(() => {
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+        });
+    });
+
+    // Smooth scroll cho các link điều hướng
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+    </script>
+  </body>
+</html>
